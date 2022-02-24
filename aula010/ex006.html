@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20px Arial, Helvetica, Sans-Serif;
+            background-color: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        interaja...
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicou) /* addEventListener('onclick', nome função) serve para não ter que colocar o nome do evento e da função no html, deixando assim o html mais limpo.*/
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+        function clicou() { // ao clicar vai aparecer a palavra clicou e o fundo fica vermelho
+            a.innerText = 'Clicou!'
+            a.style.backgroundColor = 'red'
+        }
+
+        function entrar() { // ao passar o mouse por cima da div, vai aparecer a palavra entrou
+            a.innerText = 'Entrou'
+        }
+
+        function sair() { // ao sair da div aparece a palavra saiu e o fundo volta a ser verde
+            a.innerText = 'Saiu'
+            a.style.backgroundColor = 'green'
+        }
+    </script>
+</body>
+</html>

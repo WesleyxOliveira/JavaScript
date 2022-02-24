@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Javascritp</p>
+    <div class="msg">Clique em mim</div>
+    <script>
+        //window.document.write(window.navigator.appName) 
+
+        //window.document.write(window.navigator.appCodeName)
+
+        //window.document.write(window.document.charset)
+
+        //window.document.write('Olá Mundo!')
+
+        //window.document.write(window.document.URL)
+
+        
+        
+        /*
+        Por Marca(tag name)
+
+        var p1 = window.document.getElementsByTagName('p')[0]
+
+        //window.document.write('Está escrito assim ' +p1.innerText)    
+
+        p1.style.color ='red'
+        */
+
+
+
+        /*
+        com window.alert()
+
+        window.alert(document.getElementsByTagName('p')[0].innerHTML)
+        */
+
+
+
+        /*
+        mudando a cor do body
+
+        var corpo = window.document.body
+
+        corpo.style.backgroundColor ='gray'
+        */
+
+        
+
+
+        /*
+        (Por ID)
+
+        <div id='msg'> </div>
+
+        var d = window.document.getElementById('msg')
+
+        d.innerText = 'Hello World!' 
+        
+        d.style.color ='red' //Estilo
+
+        window.alert(d.innerText) //Alert
+
+        //d.style.fontFamily ='Times'
+
+        window.document.getElementById('msg').style.fontFamily = 'Times'
+
+        */
+
+        /*
+        (Por Nome)
+
+        var d = window.document.getElementsByName('msg')[0]
+
+        d.innerText = 'Xzera'
+
+        d.style.backgroundColor = 'hotpink'
+        window.alert(d.innerText)
+        */
+
+
+        /*
+        (Por classe) Obs: é preciso usar [0]
+
+        var d = window.document.getElementsByClassName('msg')[0]
+
+        d.innerText = 'Brucutu garanhão'
+        d.style.color = 'brown'
+        window.alert(d.innerText)
+        */
+
+        /*
+        (Por querySelector(''))
+
+        var d = window.document.querySelector('div.msg')
+
+        d.innerText = 'Olá'
+        d.style.color = 'red'
+        window.alert(d.innerText)
+    </script>
+</body>
+</html>
