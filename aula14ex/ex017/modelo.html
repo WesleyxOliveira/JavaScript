@@ -9,14 +9,20 @@
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Tabuada</h1>
     </header> 
     <section>
         <div>
-            testando
+            <label for="Entrada">Número: </label>
+            <input type="number" name="entrada" id="entrada">
+            <input type="button" value="Gerar Tabela" onclick="gerar()">
         </div>
         <div>
-
+            <select name="tabuada" id="tabuada" size="10">
+                <option value="">digite um número acima</option>
+                <option value="um" id="um"></option>
+                <option value="dois"></option>
+            </select>
         </div>
     </section>
     <footer>
