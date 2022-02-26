@@ -7,7 +7,7 @@ function calcular() {
     var fim = Number(n2.value)
     var passo = Number(n3.value)
     if (inicio == 0 || fim == 0) {        
-        window.alert('Impossível contar')
+        res.innerHTML = ('Impossível contar')
     }else if (passo == 0) {
         window.alert('Passo inválido! Considerando PASSO 1.')
         passo = passo +=1
