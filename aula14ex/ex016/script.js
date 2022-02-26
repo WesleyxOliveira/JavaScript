@@ -12,18 +12,35 @@ function calcular() {
         window.alert('Passo inválido! Considerando PASSO 1.')
         passo = passo +=1
         res.innerHTML = ("<p>Contando: </p>")
-        while (inicio <= fim) {
-            res.innerHTML += (`${inicio} &#x1F449`)
-            inicio = inicio += passo
-        }
-        res.innerHTML += ('&#x1F3C1')
+        if (inicio <= fim) {
+            while (inicio <= fim) {
+                res.innerHTML += (`${inicio} &#x1F449`)
+                inicio = inicio += passo
+            }
+            res.innerHTML += ('&#x1F3C1') 
+        }else {
+            while (fim <= inicio) {
+                res.innerHTML += (`${inicio}&#x1F449`)
+                inicio = inicio -= passo
+            }
+            res.innerHTML += ('&#x1F3C1') 
+        }        
     }else {
         res.innerHTML = ("<p>Contando: </p>")
-        while (inicio <= fim) {
-            res.innerHTML += (`${inicio} &#x1F449`)
-            inicio = inicio += passo
-        }
-        res.innerHTML += ('&#x1F3C1')
-    }
+        if (inicio <= fim) {
+            res.innerHTML = ("<p>Contando: </p>")
+            while (inicio <= fim) {
+                res.innerHTML += (`${inicio} &#x1F449`)
+                inicio = inicio += passo
+            }
+            res.innerHTML += ('&#x1F3C1')
+        }else {
+            while (fim <= inicio) {
+                res.innerHTML += (`${inicio}&#x1F449`)
+                inicio = inicio -= passo
+            }
+            res.innerHTML += ('&#x1F3C1')
+        }  
+    }  
 }
 
