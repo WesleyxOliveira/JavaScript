@@ -37,5 +37,3 @@ for(let pos in valores) {
     console.log(`Na posição ${pos} tem o valor ${valores[pos]}`)
 }
 */
-console.log(valores.indexOf(3))
-valores.indexOf(1)
